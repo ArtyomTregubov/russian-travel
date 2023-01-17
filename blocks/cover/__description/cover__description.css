@@ -1,0 +1,13 @@
+.cover__description {
+    width: min(100%, 560px);
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    z-index: 1;
+  }
+  
+  @media screen and (max-width: 320px) {
+    .cover__description {
+      width: min(100%, 288px);
+    }
+  }

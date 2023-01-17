@@ -1,0 +1,27 @@
+.place__image {
+    grid-column: 1;
+    width: min(100%, 460px);
+    margin-top: 48px;
+  }
+  
+  @media screen and (max-width: 1150px) {
+    .place__image {
+      width: min(100%, calc((100vw - 1024px) / (1280 - 1024) * (460 - 440) + 440px));
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .place__image {
+      width: min(100%, calc((100vw - 768px) / (1024 - 768) * (440 - 340) + 340px));
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .place__image {
+      grid-area: image;
+      grid-row: 3;
+      grid-column: 1;
+      margin: 0;
+      width: min(100%, 700px);
+    }
+  }

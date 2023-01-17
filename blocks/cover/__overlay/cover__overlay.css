@@ -1,0 +1,31 @@
+.cover__overlay {
+    display: grid;
+    min-height: 740px;
+    align-items: center;
+    justify-items: center;
+    width: inherit;
+    height: inherit;
+    z-index: 1;
+    background-color: rgba(42, 44, 47, .3);
+    transition: background-color .2s;
+    color: white;
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .cover__overlay {
+      min-height: 640px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .cover__overlay {
+      min-height: calc((100vw - 320px) / (768 - 320) * (480 - 200) + 200px);
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    .cover__overlay {
+      min-height: 200px;
+    }
+  }
