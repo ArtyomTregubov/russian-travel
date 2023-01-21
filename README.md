@@ -7,3 +7,5 @@ HTML
 CSS
 Адаптивная верстка
 БЭМ
+
+Ссылка на проект: https://artyomtregubov.github.io/russian-travel/
