@@ -10,6 +10,7 @@
 
 @media (max-width: 768px) {
   .cover__title {
+    font-size: calc((100vw - 320px) / (768 - 320) * (72 - 32) + 32px);
     line-height: 1.06;
   }
 }

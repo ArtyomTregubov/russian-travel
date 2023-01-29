@@ -1,4 +1,5 @@
 .cover {
+  display: grid;
   max-width: 1184px;
   min-height: 740px;
   position: relative;
@@ -33,7 +34,7 @@
 
 @media (max-width: 768px) {
   .cover {
-    min-height: 480px;
+    min-height: calc((100vw - 320px) / (768 - 320) * (480 - 200) + 200px);
     margin: 90px auto 88px;
   }
 }
